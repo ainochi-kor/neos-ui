@@ -7,5 +7,7 @@
     "lib": ["ES2015", "DOM"],
     "module": "ESNext",
     "target": "es6"
-  }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

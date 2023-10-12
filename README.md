@@ -1,81 +1,22 @@
-# Turborepo starter
+<p align="center">
+  <a>
+      <h1 align="center">Neos-UI</h1>
+  </a>
+</p>
 
-This is an official starter Turborepo.
+---
 
-## Using this example
+> Neo는 새로운, 새로운 것을 뜻하는 일본어 형용사로 유희왕의 [엘리멘틀 히어로 네오스](https://namu.wiki/w/%EC%97%98%EB%A6%AC%EB%A9%98%ED%8B%80%20%ED%9E%88%EC%96%B4%EB%A1%9C%20%EB%84%A4%EC%98%A4%EC%8A%A4#s-4)가 [네오 스페이시언](https://namu.wiki/w/%EB%84%A4%EC%98%A4%20%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8B%9C%EC%96%B8#s-3)과 [콘텍트 융합](https://namu.wiki/w/%EC%BD%98%ED%83%9D%ED%8A%B8%20%EC%9C%B5%ED%95%A9#toc)을 하는 것을 보고 영감을 받아서 제작하게 되었습니다.
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+## Components
+- Button
+- Checkbox
+- Dropdown
+- Input
+- Modal
+- Radio
+- Select
+- Tabs
+- Typography
+- Textarea
+- Tooltip
