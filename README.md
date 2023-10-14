@@ -20,3 +20,13 @@
 - Typography
 - Textarea
 - Tooltip
+- Popover
+
+---
+
+- sandpack 적용
+- 테스트 코드 작성
+- github action으로 npm 배포
+- plop으로 코드제네레이터 작성 (turborepo 기능)
+- SSR 지원
+

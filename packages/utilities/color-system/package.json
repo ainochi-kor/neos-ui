@@ -1,0 +1,17 @@
+{
+  "name": "@neos-ui/color-system",
+  "version": "0.0.0",
+  "description": "A set of NeosUI utilities",
+  "author": "Nochi <kthrkdals@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "main": "src/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@neos-ui/color-utils": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2"
+  }
+}
