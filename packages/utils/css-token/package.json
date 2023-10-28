@@ -11,7 +11,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
+    "eslint-config": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^5.2"
   }
