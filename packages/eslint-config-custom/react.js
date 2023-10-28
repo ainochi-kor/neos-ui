@@ -31,9 +31,14 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ["node_modules/", "dist/", ".eslintrc.js"],
+  ignorePatterns: ["node_modules/", "dist/", ".eslintrc.cjs"],
 
   rules: {
-    // add specific rules configurations here
+    "unicorn/filename-case": "off",
+    "no-undef": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off"
   },
 };

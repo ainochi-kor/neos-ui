@@ -21,7 +21,7 @@ const BASE_COLORS = {
   blueGrey: "#607d8b",
 };
 
-export const createDefaultColors = (object?: { [key: string]: string }) => {
+export const createDefaultColors = (object?: Record<string, string>) => {
   if (object) {
     return {
       ...BASE_COLORS,

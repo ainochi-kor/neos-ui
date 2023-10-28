@@ -1,4 +1,0 @@
-{
-  "extends": "tsconfig/utils.json",
-  "exclude": ["node_modules"]
-}

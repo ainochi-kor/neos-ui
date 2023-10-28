@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./Button";
+import type {Meta, StoryObj} from "@storybook/react";
+import Button from "./Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -13,7 +13,7 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: {control: "color"},
   },
 } satisfies Meta<typeof Button>;
 

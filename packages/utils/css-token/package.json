@@ -5,8 +5,14 @@
   "author": "Nochi <kthrkdals@gmail.com>",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "main": "src/index.ts",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2"
   }
 }

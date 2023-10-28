@@ -31,4 +31,9 @@ module.exports = {
     },
   },
   ignorePatterns: ["node_modules/", "dist/"],
+  rules: {
+    "no-bitwise": "off",
+    "unicorn/filename-case": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+  }
 };

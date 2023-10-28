@@ -1,4 +1,4 @@
-import { isValidHexColor } from "./isValidHexColor";
+import {isValidHexColor} from "./isValidHexColor";
 
 type RGB = [number, number, number];
 type HSL = [number, number, number];
@@ -9,16 +9,13 @@ function hexToRgb(hex: string): RGB {
 }
 
 function rgbToHex([r, g, b]: RGB): string {
-  return `#${((1 << 24) | (r << 16) | (g << 8) | b)
-    .toString(16)
-    .slice(1)
-    .toUpperCase()}`;
+  return `#${((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1).toUpperCase()}`;
 }
 
-function rgbToHsl([r, g, b]: RGB): HSL {
-  r /= 255;
-  g /= 255;
-  b /= 255;
+function rgbToHsl([_r, _g, _b]: RGB): HSL {
+  const r = _r / 255;
+  const g = _g / 255;
+  const b = _b / 255;
   const max = Math.max(r, g, b);
   const min = Math.min(r, g, b);
   const l = (max + min) / 2;
@@ -51,7 +48,8 @@ function hslToRgb([h, s, l]: HSL): RGB {
 
   const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
   const p = 2 * l - q;
-  const hue2rgb = (t: number) => {
+  const hue2rgb = (_t: number) => {
+    let t = _t;
     if (t < 0) t += 1;
     if (t > 1) t -= 1;
     if (t < 1 / 6) return p + (q - p) * 6 * t;
@@ -76,7 +74,7 @@ function interpolateColor(color1: RGB, color2: RGB, factor: number): RGB {
 }
 
 function expandShortHexColor(code: string): string {
-  if (code.length === 4 && code[0] === "#") {
+  if (code.length === 4 && code.startsWith("#")) {
     return `#${code[1]}${code[1]}${code[2]}${code[2]}${code[3]}${code[3]}`;
   }
   return code; // 이미 6자리거나 올바르지 않은 코드는 그대로 반환
