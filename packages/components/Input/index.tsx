@@ -4,7 +4,7 @@ import React from "react";
 
 type ReactInputProps = InputHTMLAttributes<HTMLInputElement>;
 
-interface InputProps extends ReactInputProps {
+export interface InputProps extends ReactInputProps {
   label?: ReactNode;
   register?: UseFormRegisterReturn;
 }
@@ -18,4 +18,4 @@ const Input: React.FC<InputProps> = ({ label, register, ...props }) => {
   );
 };
 
-export default { Input };
+export default Input;

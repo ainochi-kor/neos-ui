@@ -1,7 +1,7 @@
 {
   "name": "@neos-components/button",
   "version": "0.0.0",
-  "main": "src/index.tsx",
+  "main": "index.tsx",
   "license": "MIT",
   "type": "module",
   "scripts": {

@@ -14,10 +14,10 @@ type OverridableProps<T extends ElementType, K = unknown> = {
   // theme?: keyof typeof typographyStyle;
 } & CombineElementProps<T, K>;
 
-type TextProps<T extends ElementType> = PropsWithChildren<OverridableProps<T>>;
+export type TypographyProps<T extends ElementType> = PropsWithChildren<OverridableProps<T>>;
 
 const TargetComponent = <T extends ElementType = "span">(
-  { children, as, theme, ...props }: TextProps<T>,
+  { children, as, theme, ...props }: TypographyProps<T>,
   ref: React.Ref<never>,
 ) => {
   const target = as ?? "span";

@@ -5,6 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "main": "index.tsx",
   "scripts": {
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",

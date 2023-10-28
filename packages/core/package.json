@@ -1,0 +1,44 @@
+{
+  "name": "@neos-ui/core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "bash ./scripts/chromatic_publish.sh"
+  },
+  "dependencies": {
+    "@neos-components/button": "workspace:*",
+    "@neos-components/input": "workspace:*",
+    "@neos-components/typography": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.0",
+    "@storybook/addon-interactions": "^7.5.0",
+    "@storybook/addon-links": "^7.5.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.0",
+    "@storybook/builder-vite": "^7.5.1",
+    "@storybook/react": "^7.5.0",
+    "@storybook/react-vite": "^7.5.0",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/node": "^20.5.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "chromatic": "^7.4.0",
+    "eslint-config": "workspace:*",
+    "gh-pages": "^6.0.0",
+    "storybook": "^7.5.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@neos-ui/core@0.0.0"
+}
