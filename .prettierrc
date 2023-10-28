@@ -5,7 +5,7 @@
   "semi": true,
   "useTabs": false,
   "singleQuote": false,
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "endOfLine": "auto",
   "arrowParens": "always",
   "trailingComma": "all"

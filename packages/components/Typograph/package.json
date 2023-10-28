@@ -1,9 +1,10 @@
 {
-  "name": "@neos-components/button",
+  "name": "@neos-components/typography",
   "version": "0.0.0",
-  "main": "src/index.tsx",
   "license": "MIT",
-  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
@@ -14,8 +15,8 @@
     "preset": "jest-presets/browser"
   },
   "devDependencies": {
-    "@types/node": "^20.5.2",
-    "@types/react": "^18.2.0",
+    "@types/node": "^20.5.1",
+    "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.0",
     "react": "^18.2.0",
     "typescript": "^5.2",
@@ -25,7 +26,6 @@
   },
   "peerDependencies": {
     "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.5.1",
     "@testing-library/jest-dom": "^6.1.4"
   }
 }
