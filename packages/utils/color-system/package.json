@@ -1,0 +1,19 @@
+{
+  "name": "@neos-ui/color-system",
+  "version": "0.0.0",
+  "description": "A set of NeosUI utilities",
+  "author": "Nochi <kthrkdals@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "main": "src/index.ts",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@neos-ui/color-utils": "workspace:*",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2"
+  }
+}

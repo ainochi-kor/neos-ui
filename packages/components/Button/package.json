@@ -1,0 +1,30 @@
+{
+  "name": "@neos-ui/button",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-presets/browser"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "typescript": "^5.2",
+    "tsconfig": "workspace:*",
+    "jest-presets": "workspace:*",
+    "eslint-config-custom": "workspace:*"
+  },
+  "peerDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.1.4"
+  }
+}

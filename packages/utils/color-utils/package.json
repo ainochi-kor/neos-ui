@@ -1,0 +1,18 @@
+{
+  "name": "@neos-ui/color-utils",
+  "version": "0.0.0",
+  "description": "A set of NeosUI utilities",
+  "author": "Nochi <kthrkdals@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "main": "src/index.ts",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2",
+    "eslint-config-custom": "workspace:*"
+  }
+}

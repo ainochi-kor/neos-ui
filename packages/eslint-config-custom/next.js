@@ -17,7 +17,6 @@ module.exports = {
     "@vercel/style-guide/eslint/browser",
     "@vercel/style-guide/eslint/typescript",
     "@vercel/style-guide/eslint/react",
-    "@vercel/style-guide/eslint/next",
     "eslint-config-turbo",
   ].map(require.resolve),
   parserOptions: {
@@ -38,5 +37,8 @@ module.exports = {
   // add rules configurations here
   rules: {
     "import/no-default-export": "off",
+    "unicorn/filename-case": "off",
+    "react/no-unknown-property": "off",
+    "react/function-component-definition": "off"
   },
 };
