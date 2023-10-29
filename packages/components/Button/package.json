@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src/",
+    "lint": "eslint",
     "test": "jest"
   },
   "jest": {

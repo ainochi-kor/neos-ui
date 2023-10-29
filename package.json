@@ -4,13 +4,14 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "lint": "lint-staged",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo build --filter=docs^... && changeset publish"
+    "release": "turbo build --filter=docs^... && changeset publish",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
@@ -20,11 +21,19 @@
     "@testing-library/user-event": "^14.5.1",
     "@types/jest": "^29.5.5",
     "eslint": "^8.48.0",
+    "husky": "^8.0.3",
     "jest": "^29.7.0",
+    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "ts-jest": "^29.1.1",
     "tsconfig": "workspace:*",
     "turbo": "latest"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "packageManager": "pnpm@8.6.10"
 }
