@@ -1,5 +1,5 @@
 {
-  "name": "@neos-ui/token",
+  "name": "@neos-utils/token",
   "version": "0.0.0",
   "description": "A set of NeosUI utilities",
   "author": "Nochi <kthrkdals@gmail.com>",

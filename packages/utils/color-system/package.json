@@ -11,7 +11,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@neos-ui/color-utils": "workspace:*",
+    "@neos-utils/color-utils": "workspace:*",
     "eslint-config": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^5.2"

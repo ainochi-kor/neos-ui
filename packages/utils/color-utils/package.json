@@ -1,5 +1,5 @@
 {
-  "name": "@neos-ui/color-utils",
+  "name": "@neos-utils/color-utils",
   "version": "0.0.0",
   "description": "A set of NeosUI utilities",
   "author": "Nochi <kthrkdals@gmail.com>",
