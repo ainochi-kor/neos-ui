@@ -32,7 +32,7 @@
     "@types/node": "^20.5.2",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "chromatic": "^7.4.0",
+    "chromatic": "^7.5.4",
     "eslint-config": "workspace:*",
     "gh-pages": "^6.0.0",
     "storybook": "^7.5.0",
