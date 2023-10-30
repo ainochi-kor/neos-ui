@@ -1,4 +1,4 @@
-import Button, { ButtonProps } from "@neos-components/button";
+import Button, { ButtonProps } from "../components/Button";
 import type { Meta } from "@storybook/react";
 import React from "react";
 import { useState } from "react";
@@ -11,6 +11,7 @@ export default {
 const defaultProps = {
   children: "Button",
   disabled: false,
+  theme: "primary",
 };
 
 const StateTemplate = (args: ButtonProps) => {
