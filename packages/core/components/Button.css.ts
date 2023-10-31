@@ -1,90 +1,62 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import {
-  bgBlueStyle,
-  bgGrayStyle,
-  bgPrimaryStyle,
-  bgRedStyle,
-  bgYellowStyle,
-} from "../styles/style.css";
-import colorsSystem from "@neos-ui/color-system";
+import { recipe } from "@vanilla-extract/recipes";
+import { buttonStyles } from "../styles/style.css";
 
-const { defaultColorSystem: colors } = colorsSystem;
-
-export const buttonRadiusStyle = style({
-  borderRadius: "8px",
+export const buttonBasicStyle = recipe({
+  base: {
+    display: "block",
+    borderRadius: "8px",
+    minWidth: "64px",
+    cursor: "pointer",
+    border: "none",
+    outline: "none",
+    backgroundColor: "transparent",
+    ":hover": {
+      backgroundColor: "rgba(0, 0, 0, 0.04)",
+    },
+    ":active": {
+      backgroundColor: "rgba(0, 0, 0, 0.06)",
+    },
+  },
+  variants: {
+    fullWidth: {
+      true: { width: "100%" },
+    },
+  },
 });
 
-export const buttonSmallStyle = style([
-  buttonRadiusStyle,
+export const anchorBasicStyle = recipe({
+  base: {
+    display: "inline-flex",
+    textAlign: "center",
+    justifyContent: "center",
+    boxSizing: "border-box",
+    position: "relative",
+    verticalAlign: "middle",
+    userSelect: "none",
+    textDecoration: "none",
+    margin: 0,
+  },
+  variants: {
+    fullWidth: {
+      true: { width: "100%" },
+    },
+  },
+});
+
+export const buttonSmallSize = style([
   {
-    padding: "8px 12px",
+    height: "32px",
+    padding: "8px 16px",
+    fontSize: "14px",
   },
 ]);
 
-export const buttonBaseStyle = style([
-  buttonRadiusStyle,
+export const buttonBaseSize = style([
   {
+    height: "36px",
     padding: "8px 20px",
-  },
-]);
-
-export const bgPrimarButtonStyle = style([
-  bgPrimaryStyle,
-  {
-    ":hover": {
-      backgroundColor: colors.green[300],
-    },
-    ":active": {
-      backgroundColor: colors.green[500],
-    },
-  },
-]);
-
-export const bgBlueButtonStyle = style([
-  bgBlueStyle,
-  {
-    ":hover": {
-      backgroundColor: colors.blue[300],
-    },
-    ":active": {
-      backgroundColor: colors.blue[500],
-    },
-  },
-]);
-
-export const bgGrayButtonStyle = style([
-  bgGrayStyle,
-  {
-    ":hover": {
-      backgroundColor: colors.gray[300],
-    },
-    ":active": {
-      backgroundColor: colors.gray[500],
-    },
-  },
-]);
-
-export const bgRedButtonStyle = style([
-  bgRedStyle,
-  {
-    ":hover": {
-      backgroundColor: colors.red[300],
-    },
-    ":active": {
-      backgroundColor: colors.red[500],
-    },
-  },
-]);
-
-export const bgYellowButtonStyle = style([
-  bgYellowStyle,
-  {
-    ":hover": {
-      backgroundColor: colors.yellow[300],
-    },
-    ":active": {
-      backgroundColor: colors.yellow[500],
-    },
+    fontSize: "16px",
   },
 ]);
 
@@ -92,19 +64,16 @@ export const fullWidthStyle = style({
   width: "100%",
 });
 
-const basic = {
-  primary: [buttonBaseStyle, bgPrimarButtonStyle],
-  blue: [buttonBaseStyle, bgBlueButtonStyle],
-  gray: [buttonBaseStyle, bgGrayButtonStyle],
-  red: [buttonBaseStyle, bgRedButtonStyle],
-  yellow: [buttonBaseStyle, bgYellowButtonStyle],
-};
+export const buttonSize = styleVariants({
+  small: [buttonSmallSize],
+  base: [buttonBaseSize],
+});
 
-export const buttonStyle = styleVariants({
-  ...basic,
-  "widthFull primary": [...basic.primary, fullWidthStyle],
-  "widthFull blue": [...basic.blue, fullWidthStyle],
-  "widthFull gray": [...basic.gray, fullWidthStyle],
-  "widthFull red": [...basic.red, fullWidthStyle],
-  "widthFull yellow": [...basic.yellow, fullWidthStyle],
+export const buttonTheme = styleVariants({
+  ...(Object.keys(buttonStyles).reduce((theme, key) => {
+    return {
+      ...theme,
+      [key]: [buttonStyles[key]],
+    };
+  }, {}) as Record<string, [string]>),
 });

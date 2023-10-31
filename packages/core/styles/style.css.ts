@@ -3,22 +3,32 @@ import colorSystem from "@neos-ui/color-system";
 
 const { defaultColorTheme: colors } = colorSystem;
 
-export const bgPrimaryStyle = style({
-  backgroundColor: colors.green[400],
-});
+type ButtonStyles = Record<
+  string,
+  {
+    backgroundColor: string;
+    color: string;
+    ":hover": {
+      backgroundColor: string;
+    };
+    ":active": {
+      backgroundColor: string;
+    };
+  }
+>;
 
-export const bgBlueStyle = style({
-  backgroundColor: colors.blue[400],
-});
-
-export const bgGrayStyle = style({
-  backgroundColor: colors.blue[400],
-});
-
-export const bgRedStyle = style({
-  backgroundColor: colors.red[400],
-});
-
-export const bgYellowStyle = style({
-  backgroundColor: colors.yellow[400],
-});
+export const buttonStyles: ButtonStyles = Object.keys(colors).reduce((styles, key) => {
+  return {
+    ...styles,
+    [key]: {
+      backgroundColor: colors[key][500],
+      color: "#FFFFFF",
+      ":hover": {
+        backgroundColor: colors[key][400],
+      },
+      ":active": {
+        backgroundColor: colors[key][300],
+      },
+    },
+  };
+}, {});
