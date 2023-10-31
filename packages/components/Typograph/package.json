@@ -23,7 +23,8 @@
     "typescript": "^5.2",
     "tsconfig": "workspace:*",
     "jest-presets": "workspace:*",
-    "eslint-config": "workspace:*"
+    "eslint-config": "workspace:*",
+    "@neos-components/type": "workspace:*"
   },
   "peerDependencies": {
     "@testing-library/react": "^14.0.0",

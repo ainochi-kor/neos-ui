@@ -1,17 +1,9 @@
 import React, { forwardRef } from "react";
-import type { ComponentPropsWithoutRef, ElementType, PropsWithChildren } from "react";
-// import {typographyStyle} from "../styles/typography.css";
+import type { ElementType, PropsWithChildren } from "react";
+import type { CombineElementProps } from "@neos-components/type";
 
-export type Combine<T, K> = T & Omit<K, keyof T>;
-
-export type CombineElementProps<T extends ElementType, K = unknown> = Combine<
-  K,
-  ComponentPropsWithoutRef<T>
->;
-
-type OverridableProps<T extends ElementType, K = unknown> = {
+export type OverridableProps<T extends ElementType, K = unknown> = {
   as?: T;
-  // theme?: keyof typeof typographyStyle;
 } & CombineElementProps<T, K>;
 
 export type TypographyProps<T extends ElementType> = PropsWithChildren<OverridableProps<T>>;
@@ -22,10 +14,9 @@ const TargetComponent = <T extends ElementType = "span">(
 ) => {
   const target = as ?? "span";
   const Component = target;
-  const themeName = theme ? "" /*typographyStyle[theme]*/ : "";
 
   return (
-    <Component className={themeName} ref={ref} {...props}>
+    <Component ref={ref} {...props}>
       {children}
     </Component>
   );
