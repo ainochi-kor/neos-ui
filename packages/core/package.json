@@ -16,6 +16,8 @@
     "@neos-components/button": "workspace:*",
     "@neos-components/input": "workspace:*",
     "@neos-components/typography": "workspace:*",
+    "@neos-ui/color-system": "workspace:*",
+    "@vanilla-extract/css": "^1.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -32,12 +34,14 @@
     "@types/node": "^20.5.2",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "@vanilla-extract/vite-plugin": "^3.9.0",
     "chromatic": "^7.5.4",
     "eslint-config": "workspace:*",
     "gh-pages": "^6.0.0",
     "storybook": "^7.5.0",
     "tsconfig": "workspace:*",
-    "typescript": "^5.2"
+    "typescript": "^5.2",
+    "vite": "^4.5.0"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@neos-ui/core@0.0.0"

@@ -1,4 +1,16 @@
-import {isValidHexColor} from "./isValidHexColor";
+import { isValidHexColor } from "./isValidHexColor";
+
+export interface ColorSystem {
+  "100": string;
+  "200": string;
+  "300": string;
+  "400": string;
+  "500": string;
+  "600": string;
+  "700": string;
+  "800": string;
+  "900": string;
+}
 
 type RGB = [number, number, number];
 type HSL = [number, number, number];
@@ -80,7 +92,7 @@ function expandShortHexColor(code: string): string {
   return code; // 이미 6자리거나 올바르지 않은 코드는 그대로 반환
 }
 
-export function createColorSystem(baseHex: string) {
+export function createColorSystem(baseHex: string): ColorSystem {
   if (!isValidHexColor(baseHex)) {
     throw new Error("Please use hex code (ex: #ABCDEF)");
   }

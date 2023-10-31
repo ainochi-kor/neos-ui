@@ -1,5 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-vite";
-
+import { mergeConfig } from "vite";
 import { join, dirname } from "path";
 
 function getAbsolutePath(value: string): any {
@@ -23,6 +23,11 @@ const config: StorybookConfig = {
   },
   core: {
     builder: "@storybook/builder-vite",
+  },
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      plugins: [require("@vanilla-extract/vite-plugin").vanillaExtractPlugin()],
+    });
   },
 };
 export default config;

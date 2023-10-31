@@ -17,7 +17,7 @@ const BASE_COLORS = {
   orange: "#ff9800",
   deepOrange: "#ff5722",
   brown: "#795548",
-  grey: "#9e9e9e",
+  gray: "#9e9e9e",
   blueGrey: "#607d8b",
 };
 

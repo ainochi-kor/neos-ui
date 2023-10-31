@@ -1,4 +1,9 @@
 import { createDefaultColors, createColorTheme } from "@neos-utils/color-utils";
 
-export const defaultColorSystem = createDefaultColors();
-export const defaultColorTheme = createColorTheme(defaultColorSystem);
+const defaultColorSystem = createDefaultColors();
+const defaultColorTheme = createColorTheme(defaultColorSystem);
+
+export default {
+  defaultColorSystem,
+  defaultColorTheme,
+};
