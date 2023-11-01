@@ -1,5 +1,5 @@
 {
-  "name": "@neos-ui/core",
+  "name": "@neos-ui/spacian",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -16,7 +16,7 @@
     "@neos-headless/button": "workspace:*",
     "@neos-headless/input": "workspace:*",
     "@neos-headless/typography": "workspace:*",
-    "@neos-ui/color-system": "workspace:*",
+    "@neos-utils/color-system": "workspace:*",
     "@vanilla-extract/css": "^1.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -50,5 +50,5 @@
     "vite": "^4.5.0"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "@neos-ui/core@0.0.0"
+  "_id": "@neos-ui/spacian@0.0.0"
 }

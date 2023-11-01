@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - packages/core/**
+      - packages/ui/spacian/**
 
 jobs:
   chromatic-deploy:
@@ -29,12 +29,12 @@ jobs:
 
       - name: Install Dependency
         run: pnpm install -no-frozen-lockfile
-        working-directory: packages/core
+        working-directory: packages/ui/spacian
 
       - name: Publish Chromatic
         id: chromatic
         uses: chromaui/action@v1
         with:
-          workingDir: packages/core
+          workingDir: packages/ui/spacian
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}

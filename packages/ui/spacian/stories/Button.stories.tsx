@@ -3,7 +3,7 @@ import type { Meta } from "@storybook/react";
 import React from "react";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import colorSystem from "@neos-ui/color-system";
+import colorSystem from "@neos-utils/color-system";
 
 export default {
   title: "Components/Button",

@@ -3,3 +3,4 @@ packages:
   - "packages/*"
   - "packages/utils/*"
   - "packages/headless/*"
+  - "packages/ui/*"

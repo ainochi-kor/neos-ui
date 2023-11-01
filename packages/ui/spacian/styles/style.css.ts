@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import colorSystem from "@neos-ui/color-system";
+import colorSystem from "@neos-utils/color-system";
 
 const { defaultColorTheme: colors } = colorSystem;
 
