@@ -1,4 +1,4 @@
-import Input from "@neos-components/input";
+import Input from "@neos-headless/input";
 import type { Meta } from "@storybook/react";
 
 export default {

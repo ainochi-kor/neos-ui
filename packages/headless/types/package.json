@@ -1,32 +1,22 @@
 {
-  "name": "@neos-components/typography",
+  "name": "@neos-headless/types",
   "version": "0.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.tsx",
+  "main": "index.ts",
   "scripts": {
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint",
-    "test": "jest"
-  },
-  "jest": {
-    "preset": "jest-presets/browser"
+    "lint": "eslint"
   },
   "devDependencies": {
     "@types/node": "^20.5.1",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.0",
-    "react": "^18.2.0",
     "typescript": "^5.2",
     "tsconfig": "workspace:*",
-    "jest-presets": "workspace:*",
     "eslint-config": "workspace:*"
-  },
-  "peerDependencies": {
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/jest-dom": "^6.1.4"
   }
 }

@@ -104,15 +104,15 @@ export function createColorSystem(baseHex: string): ColorSystem {
   const maxRgb = hslToRgb([rgbToHsl(baseRgb)[0], rgbToHsl(baseRgb)[1], 1]);
 
   return {
-    "100": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.65)),
-    "200": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.5)),
-    "300": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.33)),
-    "400": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.16)),
+    "100": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.65)),
+    "200": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.5)),
+    "300": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.33)),
+    "400": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.16)),
     "500": hexCode,
-    "600": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.16)),
-    "700": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.33)),
-    "800": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.5)),
-    "900": rgbToHex(interpolateColor(baseRgb, zeroRgb, 0.65)),
+    "600": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.16)),
+    "700": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.33)),
+    "800": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.5)),
+    "900": rgbToHex(interpolateColor(baseRgb, maxRgb, 0.65)),
   };
 }
 

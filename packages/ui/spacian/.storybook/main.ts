@@ -13,21 +13,26 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-interactions"),
+    getAbsolutePath("@storybook/addon-knobs"),
+    getAbsolutePath("@storybook/addon-docs"),
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
-  docs: {
-    autodocs: "tag",
-  },
   core: {
     builder: "@storybook/builder-vite",
+  },
+  docs: {
+    autodocs: true,
   },
   async viteFinal(config) {
     return mergeConfig(config, {
       plugins: [require("@vanilla-extract/vite-plugin").vanillaExtractPlugin()],
     });
+  },
+  typescript: {
+    reactDocgen: "react-docgen",
   },
 };
 export default config;
