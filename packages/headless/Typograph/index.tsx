@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import type { ElementType, PropsWithChildren } from "react";
-import type { CombineElementProps } from "@neos-components/type";
+import type { CombineElementProps } from "@neos-headless/types";
 
 export type OverridableProps<T extends ElementType, K = unknown> = {
   as?: T;

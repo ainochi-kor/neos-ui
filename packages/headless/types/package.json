@@ -1,5 +1,5 @@
 {
-  "name": "@neos-components/type",
+  "name": "@neos-headless/types",
   "version": "0.0.0",
   "license": "MIT",
   "publishConfig": {

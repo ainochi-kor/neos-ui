@@ -13,9 +13,9 @@
     "chromatic": "bash ./scripts/chromatic_publish.sh"
   },
   "dependencies": {
-    "@neos-components/button": "workspace:*",
-    "@neos-components/input": "workspace:*",
-    "@neos-components/typography": "workspace:*",
+    "@neos-headless/button": "workspace:*",
+    "@neos-headless/input": "workspace:*",
+    "@neos-headless/typography": "workspace:*",
     "@neos-ui/color-system": "workspace:*",
     "@vanilla-extract/css": "^1.13.0",
     "react": "^18.2.0",

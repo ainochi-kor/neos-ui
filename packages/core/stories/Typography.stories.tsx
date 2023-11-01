@@ -1,6 +1,6 @@
 import type { Meta } from "@storybook/react";
 
-import Typography, { TypographyProps } from "@neos-components/typography";
+import Typography, { TypographyProps } from "@neos-headless/typography";
 import React from "react";
 
 export default {

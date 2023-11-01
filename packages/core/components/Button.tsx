@@ -1,4 +1,4 @@
-import AtomButton, { ButtonProps as AtomButtonProps } from "@neos-components/button";
+import AtomButton, { ButtonProps as AtomButtonProps } from "@neos-headless/button";
 
 import React from "react";
 import { anchorBasicStyle, buttonBasicStyle, buttonSize, buttonTheme } from "./Button.css";
